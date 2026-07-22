@@ -1,306 +1,439 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <title>Priyanshu Bisht — Frontend Developer & Builder | Dream with Priyanshu</title>
-  <meta name="description" content="Portfolio of Priyanshu Bisht — a frontend developer and builder who crafts interfaces, explores data, and turns ideas into well-crafted products on the web.">
-  <meta name="author" content="Priyanshu Bisht">
-  <meta property="og:title" content="Priyanshu Bisht — Frontend Developer & Builder">
-  <meta property="og:description" content="I build interfaces, explore data, and learn every day — turning ideas into useful, well-crafted products on the web.">
-  <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/avatar.png">
-  <link rel="icon" type="image/png" href="assets/images/favicon.png">
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  <!-- Intro Transition -->
-  <div class="intro-overlay" id="introOverlay" aria-hidden="true">
-    <div class="intro-content">
-      <div class="intro-lines">
-        <div class="intro-line" id="introLine1">Building interfaces...</div>
-        <div class="intro-line" id="introLine2">Exploring data...</div>
-        <div class="intro-line" id="introLine3">Learning every day...</div>
-      </div>
-      <div class="intro-bar-track">
-        <div class="intro-bar" id="introBar"></div>
-      </div>
-      <div class="intro-brand" id="introBrand">Dream With Priyanshu</div>
-    </div>
-  </div>
-
-  <div class="grid-bg" aria-hidden="true"></div>
-  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
-  <div class="particles" id="particles" aria-hidden="true"></div>
-
-  <!-- NAVBAR -->
-  <nav class="navbar" id="navbar">
-    <div class="container">
-      <a href="#" class="navbar-logo">Dream with Priyanshu</a>
-      <div class="navbar-links" id="navLinks">
-        <a href="#skills">Skills</a>
-        <a href="#journey">Journey</a>
-        <a href="#education">Education</a>
-        <a href="#contact">Contact</a>
-        <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" id="navCta">
-          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
-          Download CV
-        </a>
-      </div>
-      <button class="hamburger" id="hamburger" aria-label="Toggle menu">
-        <span></span><span></span><span></span>
-      </button>
-    </div>
-  </nav>
-
-  <!-- Mobile Nav -->
-  <div class="mobile-nav" id="mobileNav">
-    <a href="#skills">Skills</a>
-    <a href="#journey">Journey</a>
-    <a href="#education">Education</a>
-    <a href="#contact">Contact</a>
-    <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary">Download CV</a>
-  </div>
-
-  <!-- HERO -->
-  <section class="hero section" id="hero">
-    <div class="container">
-      <div class="hero-content">
-        <span class="hero-eyebrow">FRONTEND DEVELOPER & BUILDER</span>
-        <h1 class="hero-title">
-          Hi, I'm Priyanshu<span class="accent">.</span><br>
-          I build things<br>
-          for the web<span class="accent">.</span>
-        </h1>
-
-        <!-- YAML code card -->
-        <div class="code-card">
-          <div class="code-card-header">
-            <span class="code-dot"></span>
-            <span class="code-dot"></span>
-            <span class="code-dot"></span>
-          </div>
-          <pre class="code-card-body"><span class="code-key">name:</span> <span class="code-val">Priyanshu Bisht</span>
-<span class="code-key">aka:</span> <span class="code-val">Dream with Priyanshu</span>
-<span class="code-key">philosophy:</span> <span class="code-str">"Ship fast, learn faster, Carpe Diem"</span>
-<span class="code-key">open_to:</span> <span class="code-val">Collaborations &middot; Internships</span></pre>
+    <title>
+      Priyanshu Bisht — Frontend Developer & Builder | Dream with Priyanshu
+    </title>
+    <meta
+      name="description"
+      content="Portfolio of Priyanshu Bisht — a frontend developer and builder who crafts interfaces, explores data, and turns ideas into well-crafted products on the web."
+    />
+    <meta name="author" content="Priyanshu Bisht" />
+    <meta
+      property="og:title"
+      content="Priyanshu Bisht — Frontend Developer & Builder"
+    />
+    <meta
+      property="og:description"
+      content="I build interfaces, explore data, and learn every day — turning ideas into useful, well-crafted products on the web."
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:image" content="assets/images/avatar.png" />
+    <link rel="icon" type="image/png" href="assets/images/favicon.png" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Intro Transition -->
+    <div class="intro-overlay" id="introOverlay" aria-hidden="true">
+      <div class="intro-content">
+        <div class="intro-lines">
+          <div class="intro-line" id="introLine1">Building interfaces...</div>
+          <div class="intro-line" id="introLine2">Exploring data...</div>
+          <div class="intro-line" id="introLine3">Learning every day...</div>
         </div>
+        <div class="intro-bar-track">
+          <div class="intro-bar" id="introBar"></div>
+        </div>
+        <div class="intro-brand" id="introBrand">Dream With Priyanshu</div>
+      </div>
+    </div>
 
-        <p class="hero-tagline">
-          Turning ideas into useful, well-crafted products on the web. 
-          Open to internships, collaborations, and open-source contributions.
-        </p>
-        <div class="hero-cta">
-          <a href="#contact" class="btn btn-primary" id="heroContactBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
-            Contact Me
-          </a>
-          <a href="assets/docs/resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-outline" id="heroResumeBtn">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+    <div class="grid-bg" aria-hidden="true"></div>
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+    <div class="particles" id="particles" aria-hidden="true"></div>
+
+    <!-- NAVBAR -->
+    <nav class="navbar" id="navbar">
+      <div class="container">
+        <a href="#" class="navbar-logo">Dream with Priyanshu</a>
+        <div class="navbar-links" id="navLinks">
+          <a href="#skills">Skills</a>
+          <a href="#journey">Journey</a>
+          <a href="#education">Education</a>
+          <a href="#contact">Contact</a>
+          <a
+            href="assets/docs/resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-primary"
+            id="navCta"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              fill="none"
+              stroke="currentColor"
+              stroke-width="2"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+            >
+              <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+              <polyline points="7 10 12 15 17 10" />
+              <line x1="12" y1="15" x2="12" y2="3" />
+            </svg>
             Download CV
           </a>
         </div>
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
       </div>
-      <div class="hero-image">
-        <div class="hero-avatar-wrapper">
-          <img src="assets/images/avatar.png" alt="Priyanshu Bisht" class="hero-avatar" width="380" height="380">
-        </div>
-      </div>
+    </nav>
+
+    <!-- Mobile Nav -->
+    <div class="mobile-nav" id="mobileNav">
+      <a href="#skills">Skills</a>
+      <a href="#journey">Journey</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+      <a
+        href="assets/docs/resume.pdf"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn btn-primary"
+        >Download CV</a
+      >
     </div>
-  </section>
 
-  <!-- TECH STACK -->
-  <section class="section" id="skills">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-eyebrow">Tech Stack</span>
-        <h2 class="section-title">Tools I work with.</h2>
-      </div>
-      <div class="stack-categories reveal">
-        <!-- Frontend -->
-        <div class="stack-category">
-          <h3 class="stack-label">Frontend</h3>
-          <div class="stack-row">
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.146 0s-.057 0-.158.003c-2.433.023-5.267.873-7.8 2.308-2.673 1.515-4.595 3.5-4.835 5.674-.24 2.176 1.185 4.368 3.862 5.88 2.534 1.433 5.503 2.158 8.134 2.183 2.63.025 5.464-.825 7.997-2.258 2.673-1.516 4.595-3.5 4.835-5.676.24-2.175-1.185-4.367-3.86-5.88C16.786.8 13.818.075 11.187.05h-.04zm.014 1.944h.016c2.096.02 4.468.583 6.467 1.716 1.944 1.102 3.12 2.635 2.946 4.22-.175 1.583-1.625 3.167-3.574 4.27-2.002 1.134-4.482 1.776-6.58 1.756-2.097-.02-4.47-.582-6.47-1.716-1.944-1.103-3.12-2.636-2.945-4.22.174-1.583 1.625-3.166 3.573-4.27 2-1.133 4.482-1.775 6.567-1.756zm-1.11 6.81a1.914 1.914 0 0 1 1.91 1.915 1.914 1.914 0 0 1-1.91 1.914 1.914 1.914 0 0 1-1.912-1.914 1.914 1.914 0 0 1 1.91-1.915zm-8.32 1.92c-.004.015-.01.03-.01.043l3.652 6.326c-.767.443-1.488 1-2.148 1.627L.18 13.344a.178.178 0 0 1 0-.256zm21.344 0a.178.178 0 0 1 .184.256l-3.045 5.275c-.66-.628-1.38-1.185-2.146-1.628l3.65-6.324c.003-.013-.002-.028-.008-.042zm-12.784.815l-3.327 5.762c2.164 1.25 4.673 1.945 7.153 1.954 2.482.01 4.966-.672 7.14-1.917l-3.33-5.77a7.653 7.653 0 0 1-3.79 1.045 7.65 7.65 0 0 1-3.845-.986z"/></svg>
-              <span>React</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.29-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
-              <span>JavaScript</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.071-.787.168-1.875.041-.467H5.876l.053.636.635 7.068h8.003l-.287 3.086-2.27.627-2.298-.626-.15-1.647h-2.75l.263 3.2 4.935 1.413 4.906-1.371.585-6.555.073-.784.112-1.382H8.53z"/></svg>
-              <span>HTML5</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.355-1.12.83-9.617.067-.746.162-1.89-.003-.001z"/></svg>
-              <span>CSS3</span>
-            </div>
-          </div>
-        </div>
+    <!-- HERO -->
+    <section class="hero section" id="hero">
+      <div class="container">
+        <div class="hero-content">
+          <span class="hero-eyebrow">FRONTEND DEVELOPER & BUILDER</span>
+          <h1 class="hero-title">
+            Hi, I'm Priyanshu<span class="accent">.</span><br />
+            I build things<br />
+            for the web<span class="accent">.</span>
+          </h1>
 
-        <!-- Backend -->
-        <div class="stack-category">
-          <h3 class="stack-label">Backend</h3>
-          <div class="stack-row">
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998,24c-0.321,0-0.641-0.084-0.922-0.247l-2.936-1.737c-0.438-0.245-0.224-0.332-0.08-0.383c0.585-0.203,0.703-0.25,1.328-0.604c0.065-0.037,0.151-0.023,0.218,0.017l2.256,1.339c0.082,0.045,0.197,0.045,0.272,0l8.795-5.076c0.082-0.047,0.134-0.141,0.134-0.238V6.921c0-0.099-0.053-0.192-0.137-0.242l-8.791-5.072c-0.081-0.047-0.189-0.047-0.271,0L3.075,6.68C2.99,6.729,2.936,6.825,2.936,6.921v10.15c0,0.097,0.054,0.189,0.136,0.235l2.409,1.392c1.307,0.654,2.108-0.116,2.108-0.89V7.787c0-0.142,0.114-0.253,0.256-0.253h1.115c0.139,0,0.255,0.112,0.255,0.253v10.021c0,1.745-0.95,2.745-2.604,2.745c-0.508,0-0.909,0-2.026-0.551L2.28,18.675c-0.57-0.329-0.922-0.945-0.922-1.604V6.921c0-0.659,0.353-1.275,0.922-1.603l8.795-5.082c0.557-0.315,1.296-0.315,1.848,0l8.794,5.082c0.57,0.329,0.924,0.944,0.924,1.603v10.15c0,0.659-0.354,1.273-0.924,1.604l-8.794,5.078C12.643,23.916,12.324,24,11.998,24z"/></svg>
-              <span>Node.js</span>
+          <!-- YAML code card -->
+          <div class="code-card">
+            <div class="code-card-header">
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
+              <span class="code-dot"></span>
             </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.68l.05.63.13.56.21.47.25.36.3.3.33.24.35.19.35.13.33.1.3.06.26.04.21.02.13.01H5.10l-.13-.01-.26-.05-.37-.1-.46-.18-.52-.27-.55-.38-.56-.51-.55-.64-.5-.77-.45-.89-.35-.99-.25-1.06-.14-1.1-.02-1.12V12.06l.01-.13.05-.65.14-.57.22-.48.29-.38.34-.29.38-.22.41-.16.42-.1.43-.06.42-.03.39-.01h4.39l.7-.04.63-.12.55-.18.48-.25.4-.3.33-.35.26-.37.21-.39.15-.39.1-.37.07-.33.04-.27.02-.19V3.23l-.05-.64-.14-.57-.22-.48-.29-.38-.34-.29-.38-.22-.42-.16-.43-.1-.44-.06-.43-.03-.39-.01H7.35l-.13.01-.26.05-.38.11-.47.17-.53.25-.55.35-.54.46-.51.59-.46.71-.39.84-.3.96-.22 1.06-.12 1.13-.01 1.16V12l.01.13z"/></svg>
-              <span>Python</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12.09.282c-.89.65-2.28 2.06-2.5 3.32-.14.79-.1 1.48.16 2.05.21.46.6.93 1.05 1.25.29.21.57.38.86.51.57.26 1.15.4 1.72.48.51.08 1.03.11 1.54.12 1.01.03 2.02.01 3.01-.06.77-.05 1.53-.13 2.27-.23l.1-.02c-.05.15-.12.3-.19.44-.13.25-.29.49-.46.7-.42.53-.94.94-1.5 1.25-.79.43-1.64.7-2.52.84-.71.11-1.42.16-2.14.16-.76.01-1.52 0-2.28-.06-.5-.04-1-.1-1.5-.18-.54-.09-1.07-.21-1.59-.36-.45-.14-.9-.3-1.34-.48-.35-.15-.69-.32-1.02-.51-.15-.09-.31-.19-.45-.29-.11-.08-.22-.17-.32-.26-.2-.17-.4-.36-.58-.55l-.15-.16v.21c0 .28.02.56.05.83.05.41.13.82.24 1.22.14.5.32.99.54 1.46.2.43.43.85.69 1.26.23.36.49.71.77 1.04.28.33.58.64.9 1.04 1.27 1.62 2.92 2.87 4.81 3.63 1.11.45 2.29.74 3.51.87 1.23.13 2.47.11 3.7-.06 1.07-.15 2.11-.42 3.12-.8 1.01-.38 1.98-.86 2.89-1.44.82-.53 1.58-1.14 2.26-1.83.56-.56 1.07-1.17 1.5-1.84.34-.52.63-1.07.86-1.64.19-.46.33-.94.43-1.43.08-.41.11-.83.1-1.24v-.22l-.17.15c-.24.21-.49.4-.76.59-.28.18-.58.35-.88.5-.47.23-.96.42-1.46.59-.62.22-1.25.4-1.89.54-.7.15-1.41.25-2.13.3-1.39.09-2.79.03-4.17-.18-.94-.14-1.86-.34-2.76-.6-.73-.21-1.43-.47-2.11-.79-.58-.27-1.12-.59-1.64-.95-.44-.31-.84-.66-1.2-1.04-.32-.34-.6-.71-.84-1.1-.21-.34-.38-.7-.5-1.07-.09-.27-.15-.55-.17-.83-.02-.27-.01-.55.04-.82.04-.2.1-.39.18-.58.07-.17.15-.34.25-.5.17-.28.38-.54.62-.77.29-.28.62-.51.98-.7.42-.23.86-.42 1.33-.56.63-.19 1.28-.31 1.94-.38.83-.09 1.67-.11 2.51-.08.97.03 1.94.13 2.89.3 1.03.18 2.04.44 3.01.78.89.31 1.75.69 2.57 1.14.77.42 1.49.92 2.16 1.48l.18.15v-.23c0-.3-.03-.59-.08-.88-.06-.39-.15-.78-.27-1.15-.14-.46-.32-.91-.54-1.34-.23-.46-.5-.9-.8-1.33l-1.07-1.46c-1.22-1.46-2.72-2.58-4.42-3.29-1.02-.43-2.1-.73-3.21-.91-1.13-.18-2.28-.24-3.42-.17-1.04.06-2.07.21-3.08.45-1.1.26-2.16.63-3.17 1.09-.94.43-1.83.94-2.65 1.54-.77.56-1.48 1.2-2.11 1.89-.55.57-1.04 1.19-1.45 1.86-.33.54-.6 1.11-.8 1.7-.16.47-.28.96-.34 1.45-.06.48-.07.97-.02 1.45.06.63.21 1.25.43 1.85.22.61.53 1.19.92 1.73.4.55.88 1.05 1.41 1.5.58.49 1.21.92 1.88 1.29.74.4 1.52.75 2.33 1.04.9.32 1.83.57 2.77.76 1.06.21 2.13.33 3.22.37 1.18.04 2.37.01 3.55-.1 1.15-.11 2.29-.3 3.4-.56.96-.23 1.9-.54 2.81-.92.83-.34 1.63-.75 2.38-1.23.68-.43 1.32-.93 1.88-1.49.52-.52.98-1.09 1.37-1.7.35-.55.63-1.13.84-1.74.19-.55.3-1.12.35-1.7.04-.55.02-1.11-.07-1.66-.08-.55-.24-1.09-.47-1.61-.22-.51-.51-1-.87-1.45-.37-.47-.8-.89-1.28-1.27-.53-.42-1.12-.78-1.74-1.08l-.2-.09.09-.19c.14-.3.26-.61.35-.93.09-.32.15-.65.18-.98.03-.38.03-.76-.02-1.14-.06-.39-.16-.77-.31-1.14-.15-.37-.36-.71-.62-1.02-.27-.32-.59-.6-1.06-.9l-.32-.2.31-.22c.62-.43 1.14-1.01 1.48-1.68.32-.63.46-1.36.42-2.11-.05-1.05-.5-2.07-1.13-2.93C15.01.6 13.62.06 12.09.282z"/></svg>
-              <span>Java</span>
-            </div>
+            <pre
+              class="code-card-body"
+            ><span class="code-key">name:</span> <span class="code-val">Priyanshu Bisht</span>
+<span class="code-key">aka:</span> <span class="code-val">Dream with Priyanshu</span>
+<span class="code-key">philosophy:</span> <span class="code-str">"Ship fast, learn faster, Carpe Diem"</span>
+<span class="code-key">open_to:</span> <span class="code-val">Collaborations &middot; Internships</span></pre>
           </div>
-        </div>
 
-        <!-- Tools -->
-        <div class="stack-category">
-          <h3 class="stack-label">Tools</h3>
-          <div class="stack-row">
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
-              <span>Git</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-              <span>GitHub</span>
-            </div>
-            <div class="stack-item">
-              <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
-              <span>VS Code</span>
-            </div>
+          <p class="hero-tagline">
+            Turning ideas into useful, well-crafted products on the web. Open to
+            internships, collaborations, and open-source contributions.
+          </p>
+          <div class="hero-cta">
+            <a href="#contact" class="btn btn-primary" id="heroContactBtn">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+              Contact Me
+            </a>
+            <a
+              href="assets/docs/resume.pdf"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="btn btn-outline"
+              id="heroResumeBtn"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4" />
+                <polyline points="7 10 12 15 17 10" />
+                <line x1="12" y1="15" x2="12" y2="3" />
+              </svg>
+              Download CV
+            </a>
           </div>
         </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- JOURNEY -->
-  <section class="section" id="journey">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-eyebrow">My Journey</span>
-        <h2 class="section-title">The story so far.</h2>
-      </div>
-      <div class="journey-timeline reveal-stagger">
-        <div class="journey-item reveal">
-          <span class="journey-date">2026</span>
-          <h3 class="journey-title">Chief Technology Officer</h3>
-          <p class="journey-subtitle">loopynow &mdash; Self-employed, Remote</p>
-          <ul class="journey-description">
-            <li>Led technology decisions and managed development workflows</li>
-            <li>Project management and team coordination for an e-commerce platform</li>
-          </ul>
-        </div>
-        <div class="journey-item reveal">
-          <span class="journey-date">2025 &ndash; 2026</span>
-          <h3 class="journey-title">Competitions & Hackathons</h3>
-          <ul class="journey-description">
-            <li>Watch The Code &mdash; National Level Hackathon, Final Round</li>
-            <li>Budget Lens 2026 &mdash; Best Budget Analyst</li>
-            <li>Design Spark 2026 &mdash; Runner Up</li>
-            <li>Webathon 2.0 &mdash; Second Runner Up</li>
-            <li>CodeCraft 2025 &mdash; First Position</li>
-          </ul>
-        </div>
-        <div class="journey-item reveal">
-          <span class="journey-date">2024 &ndash; Present</span>
-          <h3 class="journey-title">Learning & Building</h3>
-          <p class="journey-subtitle">Graphic Era Hill University, BCA in AI & Data Science</p>
-          <ul class="journey-description">
-            <li>Exploring data analytics and visualization workflows</li>
-            <li>Learning modern frontend technologies</li>
-            <li>Building and shipping personal projects</li>
-          </ul>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section section--compact" id="education">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-eyebrow">Education</span>
-        <h2 class="section-title">Academic foundation.</h2>
-      </div>
-      <div class="education-list reveal">
-        <div class="education-row">
-          <div class="education-left">
-            <h3>Graphic Era Hill University</h3>
-            <p>BCA, AI & Data Science</p>
-          </div>
-          <div class="education-right">
-            <span class="education-year">2024 &ndash; 2027</span>
-            <span class="education-score">CGPA: 9.43</span>
-          </div>
-        </div>
-        <div class="education-row">
-          <div class="education-left">
-            <h3>Jaycees Public School</h3>
-            <p>Intermediate (Senior Secondary)</p>
-          </div>
-          <div class="education-right">
-            <span class="education-year">2022 &ndash; 2024</span>
-            <span class="education-score">Score: 86%</span>
+        <div class="hero-image">
+          <div class="hero-avatar-wrapper">
+            <img
+              src="assets/images/avatar.png"
+              alt="Priyanshu Bisht"
+              class="hero-avatar"
+              width="380"
+              height="380"
+            />
           </div>
         </div>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <!-- CONTACT -->
-  <section class="section" id="contact">
-    <div class="container">
-      <div class="section-header reveal">
-        <span class="section-eyebrow">Get In Touch</span>
-        <h2 class="section-title">Let's connect.</h2>
-        <p class="section-subtitle">Open to internships, collaborations, and open-source contributions.</p>
-      </div>
-      <div class="contact-grid reveal-stagger">
-        <a href="mailto:justfreewithme@gmail.com" class="contact-card reveal" id="contactEmail">
-          <div class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+    <!-- TECH STACK -->
+    <section class="section" id="skills">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Tech Stack</span>
+          <h2 class="section-title">Tools I work with.</h2>
+        </div>
+        <div class="stack-categories reveal">
+          <!-- Frontend -->
+          <div class="stack-category">
+            <h3 class="stack-label">Frontend</h3>
+            <div class="stack-row">
+              <div class="stack-item stack-item--react">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.23 12.004a2.236 2.236 0 0 1-2.235 2.236 2.236 2.236 0 0 1-2.236-2.236 2.236 2.236 0 0 1 2.235-2.236 2.236 2.236 0 0 1 2.236 2.236zm2.648-10.69c-1.346 0-3.107.96-4.888 2.622-1.78-1.653-3.542-2.602-4.887-2.602-.31 0-.594.063-.846.18C4.9 2.12 4.358 3.608 4.69 5.73c.167 1.056.486 2.21.94 3.406C3.515 10.278 2 11.71 2 12.998c0 1.318 1.59 2.798 3.787 3.94-.464 1.234-.785 2.42-.946 3.498-.33 2.122.21 3.61 1.578 4.218.252.117.536.18.846.18 1.345 0 3.107-.96 4.888-2.624 1.78 1.654 3.542 2.603 4.887 2.603.31 0 .594-.063.846-.18 1.368-.608 1.908-2.096 1.578-4.218-.16-1.05-.47-2.198-.92-3.388C20.478 15.78 22 14.307 22 12.998c0-1.318-1.59-2.798-3.787-3.94.464-1.234.785-2.42.946-3.498.33-2.122-.21-3.61-1.578-4.218a1.862 1.862 0 0 0-.846-.18h-.003z"/></svg>
+                <span>React</span>
+              </div>
+              <div class="stack-item stack-item--javascript">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M0 0h24v24H0V0zm22.034 18.276c-.175-1.095-.888-2.015-3.003-2.873-.736-.345-1.554-.585-1.797-1.14-.091-.33-.105-.51-.046-.705.15-.646.915-.84 1.515-.66.39.12.75.42.976.9 1.034-.676 1.034-.676 1.755-1.125-.27-.42-.405-.6-.586-.78-.63-.705-1.469-1.065-2.834-1.034l-.705.089c-.676.165-1.32.525-1.71 1.005-1.14 1.29-.811 3.541.569 4.471 1.365 1.02 3.361 1.244 3.616 2.205.24 1.17-.87 1.545-1.966 1.41-.811-.18-1.26-.586-1.755-1.336l-1.83 1.051c.21.48.45.689.81 1.109 1.74 1.756 6.09 1.666 6.871-1.004.029-.09.24-.705.074-1.65l.046.067zm-8.983-7.245h-2.248c0 1.938-.009 3.864-.009 5.805 0 1.232.063 2.363-.138 2.711-.33.689-1.18.601-1.566.48-.396-.196-.597-.466-.83-.855-.063-.105-.11-.196-.127-.196l-1.825 1.125c.305.63.75 1.172 1.324 1.517.855.51 2.004.675 3.207.405.783-.226 1.458-.691 1.811-1.411.51-.93.402-2.07.397-3.346.012-2.054 0-4.109 0-6.179l.004-.056z"/></svg>
+                <span>JavaScript</span>
+              </div>
+              <div class="stack-item stack-item--html">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.564-2.438L1.5 0zm7.031 9.75l-.232-2.718 10.059.003.071-.787.168-1.875.041-.467H5.876l.053.636.635 7.068h8.003l-.287 3.086-2.27.627-2.298-.626-.15-1.647h-2.75l.263 3.2 4.935 1.413 4.906-1.371.585-6.555.073-.784.112-1.382H8.53z"/></svg>
+                <span>HTML5</span>
+              </div>
+              <div class="stack-item stack-item--css">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M1.5 0h21l-1.91 21.563L11.977 24l-8.565-2.438L1.5 0zm17.09 4.413L5.41 4.41l.213 2.622 10.125.002-.255 2.716h-6.64l.24 2.573h6.182l-.366 3.523-2.91.804-2.956-.81-.188-2.11h-2.61l.29 3.855L12 19.002l5.355-1.12.83-9.617.067-.746.162-1.89-.003-.001z"/></svg>
+                <span>CSS3</span>
+              </div>
+            </div>
           </div>
-          <h4>Email</h4>
-          <p>justfreewithme@gmail.com</p>
-        </a>
-        <a href="https://linkedin.com/in/dream-with-priyanshu" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="contactLinkedIn">
-          <div class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
-          </div>
-          <h4>LinkedIn</h4>
-          <p>dream-with-priyanshu</p>
-        </a>
-        <a href="https://github.com/dreamwithpriyanshu" target="_blank" rel="noopener noreferrer" class="contact-card reveal" id="contactGitHub">
-          <div class="contact-card-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
-          </div>
-          <h4>GitHub</h4>
-          <p>dreamwithpriyanshu</p>
-        </a>
-      </div>
-    </div>
-  </section>
 
-  <!-- FOOTER -->
-  <footer class="footer">
-    <div class="container">
-      <div class="footer-content">
-        <p class="footer-text">Built with care by <span>Priyanshu Bisht</span></p>
-        <p class="footer-copyright">Dream with Priyanshu &copy; 2026</p>
-      </div>
-    </div>
-  </footer>
+          <!-- Backend -->
+          <div class="stack-category">
+            <h3 class="stack-label">Backend</h3>
+            <div class="stack-row">
+              <div class="stack-item stack-item--node">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M11.998 24c-.321 0-.641-.084-.922-.247l-2.936-1.737c-.438-.245-.224-.332-.08-.383.585-.203.703-.25 1.328-.604.065-.037.151-.023.218.017l2.256 1.339a.36.36 0 0 0 .272 0l8.795-5.076c.082-.047.134-.141.134-.238V6.921c0-.099-.053-.192-.137-.242l-8.791-5.072a.27.27 0 0 0-.271 0L3.075 6.68c-.085.049-.139.143-.139.242v10.15c0 .097.054.189.136.235l2.409 1.392c1.307.654 2.108-.116 2.108-.89V7.787c0-.142.114-.253.256-.253h1.115c.139 0 .255.112.255.253v10.021c0 1.745-.95 2.745-2.604 2.745-.508 0-.909 0-2.026-.551L2.28 18.675c-.57-.329-.922-.945-.922-1.604V6.921c0-.659.353-1.275.922-1.603l8.795-5.082c.557-.315 1.296-.315 1.848 0l8.794 5.082c.57.329.924.944.924 1.603v10.15c0 .659-.354 1.273-.924 1.604l-8.794 5.078c-.28.163-.6.247-.925.247z"/></svg>
+                <span>Node.js</span>
+              </div>
+              <div class="stack-item stack-item--python">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M14.25.18l.9.2.73.26.59.3.45.32.34.34.25.34.16.33.1.3.04.26.02.2-.01.13V8.5l-.05.63-.13.55-.21.46-.26.38-.3.31-.33.25-.35.19-.35.14-.33.1-.3.07-.26.04-.21.02H8.77l-.69.05-.59.14-.5.22-.41.27-.33.32-.27.35-.2.36-.15.37-.1.35-.07.32-.04.27-.02.21v3.68l.05.63.13.56.21.47.25.36.3.3.33.24.35.19.35.13.33.1.3.06.26.04.21.02.13.01H5.1l-.13-.01-.26-.05-.37-.1-.46-.18-.52-.27-.55-.38-.56-.51-.55-.64-.5-.77-.45-.89-.35-.99-.25-1.06-.14-1.1-.02-1.12V12.06l.01-.13.05-.65.14-.57.22-.48.29-.38.34-.29.38-.22.41-.16.42-.1.43-.06.42-.03.39-.01h4.39l.7-.04.63-.12.55-.18.48-.25.4-.3.33-.35.26-.37.21-.39.15-.39.1-.37.07-.33.04-.27.02-.19V3.23l-.05-.64-.14-.57-.22-.48-.29-.38-.34-.29-.38-.22-.42-.16-.43-.1-.44-.06-.43-.03-.39-.01H7.35l-.13.01-.26.05-.38.11-.47.17-.53.25-.55.35-.54.46-.51.59-.46.71-.39.84-.3.96-.22 1.06-.12 1.13-.01 1.16V12l.01.13z"/></svg>
+                <span>Python</span>
+              </div>
+              <div class="stack-item stack-item--java">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M8.851 18.56s-.917.534.653.714c1.902.218 2.874.187 4.969-.211 0 0 .552.346 1.321.646-4.699 2.013-10.633-.118-6.943-1.149M8.276 15.933s-1.028.762.542.924c2.032.209 3.636.227 6.413-.308 0 0 .384.389.987.602-5.679 1.661-12.007.13-7.942-1.218M13.116 11.475c1.158 1.333-.304 2.533-.304 2.533s2.939-1.518 1.589-3.418c-1.261-1.772-2.228-2.652 3.007-5.688 0 0-8.216 2.051-4.292 6.573M19.33 20.504s.679.559-.747.991c-2.712.822-11.288 1.069-13.669.033-.856-.373.75-.89 1.254-.998.527-.114.828-.093.828-.093-.953-.671-6.156 1.317-2.643 1.887 9.58 1.553 17.462-.7 14.977-1.82M9.292 13.21s-4.362 1.036-1.544 1.412c1.189.159 3.561.123 5.77-.062 1.806-.152 3.618-.477 3.618-.477s-.637.272-1.098.587c-4.429 1.165-12.986.623-10.522-.568 2.082-1.006 3.776-.892 3.776-.892M17.116 17.584c4.503-2.34 2.421-4.589.968-4.285-.356.074-.515.138-.515.138s.132-.207.385-.297c2.875-1.011 5.086 2.981-.928 4.562 0 0 .07-.062.09-.118M14.401 0s2.494 2.494-2.365 6.33c-3.896 3.077-.889 4.832 0 6.836-2.274-2.053-3.943-3.858-2.824-5.539 1.644-2.469 6.197-3.665 5.189-7.627M9.734 23.924c4.322.277 10.959-.154 11.116-2.198 0 0-.302.775-3.572 1.391-3.688.694-8.239.613-10.937.168 0 0 .553.457 3.393.639"/></svg>
+                <span>Java</span>
+              </div>
+            </div>
+          </div>
 
-  <script src="script.js"></script>
-</body>
+          <!-- Tools -->
+          <div class="stack-category">
+            <h3 class="stack-label">Tools</h3>
+            <div class="stack-row">
+              <div class="stack-item stack-item--git">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.546 10.93L13.067.452c-.604-.603-1.582-.603-2.188 0L8.708 2.627l2.76 2.76c.645-.215 1.379-.07 1.889.441.516.515.658 1.258.438 1.9l2.66 2.66c.645-.222 1.387-.078 1.9.435.721.72.721 1.884 0 2.604-.719.719-1.881.719-2.6 0-.539-.541-.674-1.337-.404-1.996L12.86 8.955v6.525c.176.086.342.203.488.348.713.721.713 1.883 0 2.6-.719.721-1.889.721-2.609 0-.719-.719-.719-1.879 0-2.598.182-.18.387-.316.605-.406V8.835c-.217-.091-.424-.222-.6-.401-.545-.545-.676-1.342-.396-2.009L7.636 3.7.45 10.881c-.6.605-.6 1.584 0 2.189l10.48 10.477c.604.604 1.582.604 2.186 0l10.43-10.43c.605-.603.605-1.582 0-2.187"/></svg>
+                <span>Git</span>
+              </div>
+              <div class="stack-item stack-item--github">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg>
+                <span>GitHub</span>
+              </div>
+              <div class="stack-item stack-item--vscode">
+                <svg viewBox="0 0 24 24" fill="currentColor"><path d="M23.15 2.587L18.21.21a1.494 1.494 0 0 0-1.705.29l-9.46 8.63-4.12-3.128a.999.999 0 0 0-1.276.057L.327 7.261A1 1 0 0 0 .326 8.74L3.899 12 .326 15.26a1 1 0 0 0 .001 1.479L1.65 17.94a.999.999 0 0 0 1.276.057l4.12-3.128 9.46 8.63a1.492 1.492 0 0 0 1.704.29l4.942-2.377A1.5 1.5 0 0 0 24 20.06V3.939a1.5 1.5 0 0 0-.85-1.352zm-5.146 14.861L10.826 12l7.178-5.448v10.896z"/></svg>
+                <span>VS Code</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JOURNEY -->
+    <section class="section" id="journey">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">My Journey</span>
+          <h2 class="section-title">The story so far.</h2>
+        </div>
+        <div class="journey-timeline reveal-stagger">
+          <div class="journey-item reveal">
+            <span class="journey-date">2026</span>
+            <h3 class="journey-title">Chief Technology Officer</h3>
+            <p class="journey-subtitle">
+              loopynow &mdash; Self-employed, Remote
+            </p>
+            <ul class="journey-description">
+              <li>
+                Led technology decisions and managed development workflows
+              </li>
+              <li>
+                Project management and team coordination for an e-commerce
+                platform
+              </li>
+            </ul>
+          </div>
+          <div class="journey-item reveal">
+            <span class="journey-date">2025 &ndash; 2026</span>
+            <h3 class="journey-title">Competitions & Hackathons</h3>
+            <ul class="journey-description">
+              <li>
+                Watch The Code &mdash; National Level Hackathon, Final Round
+              </li>
+              <li>Budget Lens 2026 &mdash; Best Budget Analyst</li>
+              <li>Design Spark 2026 &mdash; Runner Up</li>
+              <li>Webathon 2.0 &mdash; Second Runner Up</li>
+              <li>CodeCraft 2025 &mdash; First Position</li>
+            </ul>
+          </div>
+          <div class="journey-item reveal">
+            <span class="journey-date">2024 &ndash; Present</span>
+            <h3 class="journey-title">Learning & Building</h3>
+            <p class="journey-subtitle">
+              Graphic Era Hill University, BCA in AI & Data Science
+            </p>
+            <ul class="journey-description">
+              <li>Exploring data analytics and visualization workflows</li>
+              <li>Learning modern frontend technologies</li>
+              <li>Building and shipping personal projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EDUCATION -->
+    <section class="section section--compact" id="education">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Education</span>
+          <h2 class="section-title">Academic foundation.</h2>
+        </div>
+        <div class="education-list reveal">
+          <div class="education-row">
+            <div class="education-left">
+              <h3>Graphic Era Hill University</h3>
+              <p>BCA, AI & Data Science</p>
+            </div>
+            <div class="education-right">
+              <span class="education-year">2024 &ndash; 2027</span>
+              <span class="education-score">CGPA: 9.43</span>
+            </div>
+          </div>
+          <div class="education-row">
+            <div class="education-left">
+              <h3>Jaycees Public School</h3>
+              <p>Intermediate (Senior Secondary)</p>
+            </div>
+            <div class="education-right">
+              <span class="education-year">2022 &ndash; 2024</span>
+              <span class="education-score">Score: 86%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="section" id="contact">
+      <div class="container">
+        <div class="section-header reveal">
+          <span class="section-eyebrow">Get In Touch</span>
+          <h2 class="section-title">Let's connect.</h2>
+          <p class="section-subtitle">
+            Open to internships, collaborations, and open-source contributions.
+          </p>
+        </div>
+        <div class="contact-grid reveal-stagger">
+          <a
+            href="mailto:justfreewithme@gmail.com"
+            class="contact-card reveal"
+            id="contactEmail"
+          >
+            <div class="contact-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              >
+                <path
+                  d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"
+                />
+                <polyline points="22,6 12,13 2,6" />
+              </svg>
+            </div>
+            <h4>Email</h4>
+            <p>justfreewithme@gmail.com</p>
+          </a>
+          <a
+            href="https://linkedin.com/in/dream-with-priyanshu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card reveal"
+            id="contactLinkedIn"
+          >
+            <div class="contact-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"
+                />
+              </svg>
+            </div>
+            <h4>LinkedIn</h4>
+            <p>dream-with-priyanshu</p>
+          </a>
+          <a
+            href="https://github.com/dreamwithpriyanshu"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card reveal"
+            id="contactGitHub"
+          >
+            <div class="contact-card-icon">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 24 24"
+                fill="currentColor"
+              >
+                <path
+                  d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"
+                />
+              </svg>
+            </div>
+            <h4>GitHub</h4>
+            <p>dreamwithpriyanshu</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p class="footer-text">
+            Built with care by <span>Priyanshu Bisht</span>
+          </p>
+          <p class="footer-copyright">Dream with Priyanshu &copy; 2026</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
 </html>
