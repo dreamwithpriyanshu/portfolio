@@ -12,6 +12,15 @@ const navLinks = [...document.querySelectorAll(".site-nav a")];
 const revealItems = [...document.querySelectorAll("[data-reveal]")];
 const yearTarget = document.querySelector("[data-current-year]");
 
+const closeNavigation = () => {
+  if (!navToggle || !siteNav) {
+    return;
+  }
+
+  navToggle.setAttribute("aria-expanded", "false");
+  siteNav.classList.remove("is-open");
+};
+
 if (yearTarget) {
   yearTarget.textContent = new Date().getFullYear();
 }
@@ -47,10 +56,22 @@ if (navToggle && siteNav) {
   });
 
   navLinks.forEach((link) => {
-    link.addEventListener("click", () => {
-      navToggle.setAttribute("aria-expanded", "false");
-      siteNav.classList.remove("is-open");
-    });
+    link.addEventListener("click", closeNavigation);
+  });
+
+  document.addEventListener("click", (event) => {
+    const clickedInsideNavigation = siteNav.contains(event.target);
+    const clickedToggle = navToggle.contains(event.target);
+
+    if (!clickedInsideNavigation && !clickedToggle) {
+      closeNavigation();
+    }
+  });
+
+  document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") {
+      closeNavigation();
+    }
   });
 }
 
@@ -84,6 +105,12 @@ if (navLinks.length) {
         navLinks.forEach((link) => {
           const isMatch = link.getAttribute("href") === `#${entry.target.id}`;
           link.classList.toggle("is-active", isMatch);
+
+          if (isMatch) {
+            link.setAttribute("aria-current", "page");
+          } else {
+            link.removeAttribute("aria-current");
+          }
         });
       });
     },
